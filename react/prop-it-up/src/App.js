@@ -7,25 +7,28 @@ function App() {
       <PersonCard 
       lastName = { "Doe" }
       firstName = { "Jane" }
-      ageNumber = { 45 }
+      initialAge = { 45 }
       hairColor = { "Black" } />
       <PersonCard 
       lastName = { "Smith" }
       firstName = { "John" }
-      ageNumber = { 88 }
+      initialAge = { 88 }
       hairColor = { "Brown" } />
       <PersonCard 
       lastName = { "Fillmore" }
       firstName = { "Millard" }
-      ageNumber = { 50 }
+      initialAge = { 50 }
       hairColor = { "Brown" } />
       <PersonCard 
       lastName = { "Smith" }
       firstName = { "Maria" }
-      ageNumber = { 62 }
+      initialAge = { 62 }
       hairColor = { "Brown" } />
     </div>
   );
 }
 
+
 export default App;
+
+// updated for "putting it together core assignment"
