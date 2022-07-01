@@ -6,11 +6,11 @@ const Pokemon = (props) => {
  
     useEffect(() => {
         axios
-            .get('https://pokeapi.co/api/v2/pokemon')
+            .get('https://pokeapi.co/api/v2/pokemon?limit=807')
             .then((response) => {
                 console.log(response.data);
                 setPokemon(response.data.results);})
-            .catch((err) => console.log(err));
+            .catch((err) => console.log(err))
             
         }, []);
  
