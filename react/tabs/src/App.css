@@ -16,10 +16,10 @@
   transition: 0.3s;
   font-size: 17px;
 }
-.tab button:hover {
+.tablinks:hover {
   background-color: #ddd;
 }
-.tab button:focus {
+.tablinks:focus {
   background-color: gray;
 }
 
