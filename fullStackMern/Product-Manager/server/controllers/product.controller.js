@@ -30,6 +30,20 @@ module.exports.createNewProduct = (req, res) => {
         });
 }
 
+module.exports.updateProduct = (req, res) => {
+    Product.findOneAndUpdate({_id:req.params.id},
+        req.body,
+        {new:true}
+        )
+        .then((updateUser) => {
+            res.json(updateUser)
+        })
+        .catch((err) => {
+            res.json({message: 'Something went wrong', error:err})
+        });
+
+}
+
 module.exports.deleteProduct = (req,res) => {
     Product.deleteOne({ _id: req.params.id })
         .then((result) => {

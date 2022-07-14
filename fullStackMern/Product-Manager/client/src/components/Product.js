@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Product = (props) => {
     const[product, setProduct] = useState({});
@@ -18,12 +18,15 @@ const Product = (props) => {
     },[]);
     
   return (
-    <div>
-        <h1>{product.title}</h1>
-        <p>Price: ${product.price}</p>
-        <p>Description: {product.description}</p>
+    <div className='wrapper1'>
+        <div className='card'>
+            <h1>{product.title}</h1>
+            <p>Price: ${product.price}</p>
+            <p>Description: {product.description}</p>
+            <Link to = {'/'}><button>Home</button></Link>
+        </div>
     </div>
   )
 }
 
-export default Product
+export default Product;

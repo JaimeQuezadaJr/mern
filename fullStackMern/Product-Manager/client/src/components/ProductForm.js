@@ -4,7 +4,7 @@ import axios from 'axios';
 const ProductForm = (props) => {
     const {product, setProduct} = props;
     const [title, setTitle] = useState("");
-    const [price, setPrice] = useState();
+    const [price, setPrice] = useState(0);
     const [description, setDescription] = useState("");
 
     const onSubmitHandler = (e) => {
